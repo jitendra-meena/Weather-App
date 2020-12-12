@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block body_block %}
+<div class="container">
+  <div class="jumbotron">
+      <h1 style="color-red;"><marquee>Welcome to the Jitendra !</marquee></h1>
+    {% if user.is_authenticated %}
+        <h2>Hello {{ user.username }}</h2>
+    {% else %}
+        <h2 style="color-blue;">Thank_you Jitendra Welcome To DataBase Connection</h2>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
